@@ -1,23 +1,20 @@
-html {
-  font-size: 10px;
-}
 
-body {
-  background: $purple;
-  background:#efefef;
-  &:before {
-    content: '';
-    display: block;
-    background: $grad;
-    height: 10px;
-    width: 100%;
-  }
-}
+*{margin: 0; padding: 0;}
+body{margin: 0; padding: 0;width: 100%;}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 
-.inner {
-  max-width:900px;
-  margin: 0 auto;
-  @media all and (max-width: 900px) {
-    padding: 2rem;
-  }
-}
+
+.theme *{-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
+

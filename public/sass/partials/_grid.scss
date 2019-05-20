@@ -9,7 +9,7 @@ $phoneContainer: 480px;
 [class^="col-"],[class*=" col-"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;float:left;min-height:1px;padding:0 10px;position:relative}
 [class^="col-"] .grid,[class*=" col-"] .grid{margin:0 -20px}
 
-.hidden{display:none}
+.hidden{display:none;}
 
 
 .halfContainer{margin-left:auto;margin-right:auto;width:$desktopContainer/2;height:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}

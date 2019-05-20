@@ -3,7 +3,7 @@ const router = express.Router();
 const appController = require('../controllers/appController');
 const { catchErrors } = require('../handlers/errorHandlers');
 
-router.get('/',catchErrors(appController.dashboard));
+router.get('/',appController.dashboard);
 
 /* Do work here
 router.get('/', (req, res) => {

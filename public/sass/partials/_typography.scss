@@ -21,7 +21,13 @@ h1, h2, h3, h4, h5, h6, {
   font-family: 'Panama';
   font-weight: 600;
   letter-spacing:-1px;
+  margin-bottom:20px;
 }
+
+h1{font-size:32px}
+h2{font-size:28px;font-weight:300}
+h3{font-size:22px;font-weight: 400;}
+
 
 a {
   text-decoration: none;
