@@ -18,7 +18,8 @@ mongoose.connection.on('error', (err) => {
 });
 
 // READY?! Let's go!
-
+// Import all Models
+require('./models/Contact');
 
 // Start our app!
 const app = require('./app');

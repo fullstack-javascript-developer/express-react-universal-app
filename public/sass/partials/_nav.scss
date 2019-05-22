@@ -1,30 +1,64 @@
 nav{
   background-image: linear-gradient(0deg, #018382 0%, #259CD4 100%);
-  width: 70px;
+  width: 60px;
   height: 100%;
   float: left;
   position: fixed;
   .logo{
-    padding: 15px 20px;
+    padding: 15px;
     width: inherit;
     height: auto;
     border-bottom: 1px solid #298DBA;
     box-shadow: 0 1px 0 0 rgba(141,186,255,0.20);
   }  
   .navMenu{
-    padding: 20px;
+    padding: 15px;
       li{
         display: block;
         padding: 15px 0;
         
         svg{
           width: 24px;
-          transition: all 0.2s;
           fill: #FFFFFF;
+          margin: 0 auto;
+        }
+        &:hover{
+          padding-left: 5px;         
         }
       }  
   }
 }
+
+.panel{
+  position: fixed;
+  width: 480px;
+  margin-left: 60px;
+  display: block;
+  height: 100%;
+  background: $modelColor;
+  box-shadow: 8px 0 22px 0 rgba(0,173,255,0.16);
+  border-right: 1px solid rgba(37,156,212,0.10);
+  .box{
+    padding: 15px 30px;
+    box-sizing:border-box;
+    width: 100%;
+    display: inline-block;
+  }
+  &Title {float: left; font-size: 18px; color: $basicColor; margin-top: 10px;}
+  &Button{
+    float: right;
+    margin-top:10px;
+    cursor: pointer;
+    svg{
+      float: right;
+      width: 24px;         
+      fill: #259CD4;
+    }
+
+  } 
+}
+
+
 
 
 

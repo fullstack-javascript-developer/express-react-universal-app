@@ -4,53 +4,55 @@ input,select,textarea{
   -moz-user-select: -moz-auto !important;
   -o-user-select: auto !important;
   user-select: auto !important;
-  padding: 10px;
-  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline: none;
+  padding: 6px;
+  margin-bottom: 20px;
+  border-radius: $radiusValue;
+  -moz-border-radius: $radiusValue;
+  -webkit-border-radius: $radiusValue;
+  -khtml-border-radius:$radiusValue;
   direction: ltr;
   height: 40px;
+  width: 100%;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 13px;
+  background: #FFF;
+  color: #777;
+  border: 1px solid #EBEBEB;
+  
 }
 
-.theme .button, .theme .button a {cursor: pointer;background-image: linear-gradient(-180deg, #4D4D4D 3%, #000000 100%);box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.19), inset 1px 1px 1px 0px rgba(255,255,255,0.15);border-radius: 4px;padding: 15px 25px;color: #FFF;margin-top: 25px;display: inline-block;font-size: 14px;font-weight: 600;text-shadow: 0 1px 2px rgba(0,0,0,0.30);}
 
 
-.theme .button a{color: #FFF;font-size: 14px;}
-.theme .button a:hover{ color: #FFF; text-decoration: none;}
-
-.theme .button:hover a {
-background-image: linear-gradient(-180deg, #FF0059 3%, #CA073B 100%);
+input:active, textarea:active, select:active{
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #57C3E8;
+  outline: none;
+  color: #57C3E8;
 }
 
-input:focus{border-color:#c5c5c5}
+input:focus, textarea:focus, select:focus{
 
-input, textarea {
-  width:100%;
-  padding:10px;
-  border: 1px solid $grey;
-  &.input {
-    &--error {
-      border-color: red;
-    }
-  }
+    border: 1px solid #57C3E8;
+    -moz-box-shadow: 0 3px 8px 0 rgba(0,163,240,0.10);
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0,163,240,0.10);
+    box-shadow: 0 3px 8px 0 rgba(0,163,240,0.10);
+    color: #57C3E8;
 }
 
-label {
-  padding: 10px 0;
-  display: block;
+label{
+  font-size:13px;
+  display: inline-block;
+  width: 100%;
+  color: $textColor;
+  margin-bottom: 10px;
 }
 
-.form {
-  background: white;
-  padding: 2rem;
-  box-shadow: $grad;
-  & + .form {
-    margin-top: 4rem;
-  }
-  // I know this isn't bem but meh
-  h2 {
-    margin: 0;
-    font-size: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid $grey;
-  }
-}
+
+

@@ -1,0 +1,16 @@
+mixin contactForm(contact={})
+    form(action=`/${contact._id || ''}`, method="POST"  class="card" )
+        .col-12.alpha
+            label(for="name") Name
+            input(type="text" name="name" value=contact.name)
+        .col-12.omega    
+            label(for="surname") Surname
+            input(type="text" name="surname" value=contact.surname)
+        .col-12.alpha    
+            label(for="tel") Tel
+            input(type="text" name="tel" value=contact.tel)
+        .col-12.omega       
+            label(for="email") Email
+            input(type="email" name="email" value=contact.email)
+        
+        input(type="submit", value="Save ->" calss="button")      

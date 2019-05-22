@@ -17,7 +17,9 @@ html
                 a(href=item.slug, class=(currentPath.startsWith(item.slug) ? 'nav__active' : ''))
                   != h.icon(item.icon)
                   //span #{item.title}
-
+        .panel
+          block panel
+            
     block messages
      
     .content

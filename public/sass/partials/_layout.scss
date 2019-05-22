@@ -1,6 +1,6 @@
 
 *{margin: 0; padding: 0;}
-body{margin: 0; padding: 0;width: 100%;}
+body{margin: 0; padding: 0;width: 100%; background: #DAEBF7;}
 .clearfix:after {
      visibility: hidden;
      display: block;
@@ -16,5 +16,8 @@ body{margin: 0; padding: 0;width: 100%;}
 /* close commented backslash hack */
 
 
-.theme *{-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
+*{-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
 
+svg{display: block;}
+
+.space{width: 100%; height: 30px; display: inline-block;}
