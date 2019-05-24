@@ -1,5 +1,5 @@
 mixin contactForm(contact={})
-    form(action=`/${contact._id || ''}`, method="POST"  class="card" )
+    form.contact(action="/api/add" method="POST")
         .col-12.alpha
             label(for="name") Name
             input(type="text" name="name" value=contact.name)

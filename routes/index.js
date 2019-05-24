@@ -4,7 +4,7 @@ const appController = require('../controllers/appController');
 const { catchErrors } = require('../handlers/errorHandlers');
 
 router.get('/',appController.dashboard);
-router.post('/',catchErrors(appController.createContact));
+router.post('/api/add',catchErrors(appController.createContact));
 
 /* Do work here
 router.get('/', (req, res) => {

@@ -22,6 +22,5 @@ exports.dashboard = (req,res) =>
 exports.createContact = async (req, res) => {
       //res.send(req.body);
      const contact = await (new Contact(req.body)).save();
-     req.flash('success', `Successfully Created ${contact.name}. Care to leave a review?`);
-     res.redirect(`/${contact.id}`);
+     res.json(contact);
 };
